@@ -3,10 +3,13 @@
 
 #include <iostream>
 #include "Employee.h"
+#include "Retailer.h"
 
 int main()
 {
-	Employee employee("Phong", "101", "SUPER ADMIN", 1, 1, 1, 1);
+	Retailer employee;
+	employee.InputInformationOfEmployee();
+	employee.OutputinformationofEmployee();
 	return 0;
 }
 
