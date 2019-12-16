@@ -156,9 +156,11 @@
   <ItemGroup>
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="OOP_Final_CPP.cpp" />
+    <ClCompile Include="Retailer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="Retailer.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

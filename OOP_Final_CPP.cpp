@@ -2,10 +2,11 @@
 //
 
 #include <iostream>
+#include "Employee.h"
 
 int main()
 {
-	std::cout << "Run fine";
+	Employee employee("Phong", "101", "SUPER ADMIN", 1, 1, 1, 1);
 	return 0;
 }
 
