@@ -7,12 +7,13 @@
 //Constructor Implementation
 Employee::Employee() 
 {
-
+	//For empty object.
+	//Remember to add some default value here.
 }
-Employee::Employee(std::string name1, std::string id1, std::string rank1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1)
-	:name{name1}, id{id1}, rank{rank1}, birthYear{birthYear1},numberOfWorkDay{numberOfWorkDay1}, baseSalary{baseSalary1},salary{salary1}
+Employee::Employee(std::string name1, std::string id1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1)
+	:name{name1}, id{id1}, birthYear{birthYear1},numberOfWorkDay{numberOfWorkDay1}, baseSalary{baseSalary1},salary{salary1}
 {
-
+	//Uniform Initialization
 }
 
 void Employee::InputInformationOfEmployee()
@@ -34,7 +35,7 @@ void Employee::InputInformationOfEmployee()
 
 double Employee::FindSalary() { return baseSalary; }
 
-void Employee::OutputinformationofEmployee() 
+void Employee::OutputInformationOfEmployee() 
 {
 	using std::cout;
 	

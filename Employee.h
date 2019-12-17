@@ -15,10 +15,10 @@ protected:
 
 public:
 	Employee();
-	Employee(std::string name1, std::string id1, std::string rank1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1);
+	Employee(std::string name1, std::string id1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1);
 	//Constructor
 	virtual void InputInformationOfEmployee();
 	virtual double FindSalary();
-	virtual void OutputinformationofEmployee();
+	virtual void OutputInformationOfEmployee();
 };
 

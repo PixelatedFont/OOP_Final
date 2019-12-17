@@ -9,7 +9,7 @@ int main()
 {
 	Retailer employee;
 	employee.InputInformationOfEmployee();
-	employee.OutputinformationofEmployee();
+	employee.OutputInformationOfEmployee();
 	return 0;
 }
 
