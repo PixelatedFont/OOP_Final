@@ -3,7 +3,14 @@
 
 Telephonist::Telephonist() 
 {
-
+	Telephonist::name = "";
+	Telephonist::id = "";
+	Telephonist::rank = "";
+	Telephonist::birthYear = 0;
+	Telephonist::numberOfWorkDay = 0;
+	Telephonist::baseSalary = 0;
+	Telephonist::salary = 0;
+	Telephonist::allowance = 0;
 }
 
 Telephonist::Telephonist(double allowance1, std::string name1, std::string id1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1)

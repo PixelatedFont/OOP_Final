@@ -1,8 +1,14 @@
 #include "Retailer.h"
 Retailer::Retailer() 
 {
-	//For empty object.
-	//Remember to add some default value here.
+	Retailer::name = "";
+	Retailer::id = "";
+	Retailer::rank = "";
+	Retailer::birthYear = 0;
+	Retailer::numberOfWorkDay = 0;
+	Retailer::baseSalary = 0;
+	Retailer::salary = 0;
+	Retailer::commission = 0;
 }
 Retailer::Retailer(double commission1, std::string name1, std::string id1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1)
 	:Employee{name1, id1, birthYear1, numberOfWorkDay1, baseSalary1, salary1}, commission{commission1}

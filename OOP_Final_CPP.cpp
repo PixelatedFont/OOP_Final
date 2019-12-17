@@ -4,11 +4,14 @@
 #include <iostream>
 #include "Employee.h"
 #include "Retailer.h"
+#include "EmployeeModification.h"
 
 int main()
 {
-	Retailer employee;
-	employee.OutputInformationOfEmployee();
+	EmployeeModification Emp;
+	Emp.InputListOfEmployee();
+	Emp.ShowEmployeeWithMaxSalary();
+	Emp.Remove();
 	return 0;
 }
 

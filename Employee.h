@@ -20,5 +20,6 @@ public:
 	virtual void InputInformationOfEmployee();
 	virtual double FindSalary();
 	virtual void OutputInformationOfEmployee();
+	friend class EmployeeModification;
 };
 

@@ -2,7 +2,14 @@
 #include <string>
 Guard::Guard()
 {
-
+	Guard::name = "";
+	Guard::id = "";
+	Guard::rank = "";
+	Guard::birthYear = 0;
+	Guard::numberOfWorkDay = 0;
+	Guard::baseSalary = 0;
+	Guard::salary = 0;
+	Guard::bonus = 0;
 }
 
 Guard::Guard(double bonus1, std::string name1, std::string id1, double birthYear1, double numberOfWorkDay1, double baseSalary1, double salary1)

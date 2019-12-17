@@ -155,6 +155,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Employee.cpp" />
+    <ClCompile Include="EmployeeModification.cpp" />
     <ClCompile Include="Guard.cpp" />
     <ClCompile Include="IEmployee.cpp" />
     <ClCompile Include="OOP_Final_CPP.cpp" />
@@ -163,6 +164,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Employee.h" />
+    <ClInclude Include="EmployeeModification.h" />
     <ClInclude Include="Guard.h" />
     <ClInclude Include="IEmployee.h" />
     <ClInclude Include="Retailer.h" />
