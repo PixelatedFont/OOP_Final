@@ -1,8 +1,8 @@
-
+#include "IEmployee.h"
 #include <iostream>
 #include <string>
 #pragma once
-class Employee
+class Employee: public IEmployee
 {
 protected:
 	std::string name;

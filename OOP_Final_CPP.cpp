@@ -8,7 +8,6 @@
 int main()
 {
 	Retailer employee;
-	employee.InputInformationOfEmployee();
 	employee.OutputInformationOfEmployee();
 	return 0;
 }
