@@ -10,8 +10,9 @@ int main()
 {
 	EmployeeModification Emp;
 	Emp.InputListOfEmployee();
-	Emp.ShowEmployeeWithMaxSalary();
-	Emp.SortDescending();
+	Emp.Add();
+	//Emp.ShowEmployeeWithMaxSalary();
+	//Emp.SortDescending();
 
 	return 0;
 }

@@ -5,6 +5,7 @@
 #include "Telephonist.h"
 #include <vector>
 #include <algorithm>
+#include <functional>
 
 class EmployeeModification
 {
@@ -21,11 +22,11 @@ public:
 	void ShowEmployeeWithMaxSalary();
 	void FindTotalSalary();
 	void Remove();
-	//void Add();
+	void Add();
 	void SortDescending();
-	//void FindByName();
-	//void DefineTheRank();
-	//static void Execute();
+	void FindByName();
+	void DefineTheRank();
+
 
 };
 

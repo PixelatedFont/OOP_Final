@@ -132,6 +132,68 @@ void EmployeeModification::SortDescending()
 	}
 }
 
+void EmployeeModification::Add() 
+{
+	using std::cout;
+	using std::cin;
+
+	cout << "Type the information of this employee (Guard) you want to add to this list: \n";
+	std::shared_ptr<Guard> newGuard(new Guard);
+	newGuard->InputInformationOfEmployee();
+	internalList.push_back(newGuard);
+	listOfEmployee.insert(listOfEmployee.begin(), internalList.begin(), internalList.end());
+	cout << "List after adding: \n";
+	for (unsigned int i = 0; i < listOfEmployee.size(); i++)
+	{
+		listOfEmployee[i]->OutputInformationOfEmployee();
+	}
+}
+
+void EmployeeModification::FindByName()
+{
+	using std::cout;
+	using std::cin;
+	cout << "Type the name of employee: ";
+	std::string temp{};
+	cin >> temp;
+	for (auto it = listOfEmployee.begin(); it != listOfEmployee.end(); ++it)
+	{
+		if (temp == (*it)->name)
+		{
+			cout << "Information of that employee: \n";
+			(*it)->OutputInformationOfEmployee();
+			break;
+		}
+	}
+}
+
+void EmployeeModification::DefineTheRank()
+{
+	using std::cout;
+	using std::cin;
+
+	for (auto it = listOfEmployee.begin(); it != listOfEmployee.end(); ++it)
+	{
+		if ((*it)->numberOfWorkDay < 30)
+		{
+			cout << (*it)->name;
+			(*it)->rank = "Bad";
+			cout << (*it)->rank << "= Bad";
+		}
+		else if ((*it)->numberOfWorkDay < 60)
+		{
+			cout << (*it)->name;
+			(*it)->rank = "Good";
+			cout << (*it)->rank << "= Good";
+		}
+		else if ((*it)->numberOfWorkDay > 100)
+		{
+			cout << (*it)->name;
+			(*it)->rank = "Excellent";
+			cout << (*it)->rank << "= Excellent";
+		}
+	}
+}
 
 
 
