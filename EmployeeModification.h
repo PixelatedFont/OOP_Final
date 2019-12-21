@@ -21,9 +21,8 @@ public:
 	void ShowEmployeeWithMaxSalary();
 	void FindTotalSalary();
 	void Remove();
-
 	//void Add();
-	//void SortDescending();
+	void SortDescending();
 	//void FindByName();
 	//void DefineTheRank();
 	//static void Execute();

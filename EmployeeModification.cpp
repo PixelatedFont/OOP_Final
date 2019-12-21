@@ -22,7 +22,7 @@ void EmployeeModification::InputListOfEmployee()
 	cin >> numOfRetailer;
 	for (int i = 0; i < numOfRetailer; i++) {
 		std::shared_ptr<Retailer> newRetailer(new Retailer);
-		listOfEmployee.push_back(std::move(newRetailer));
+		listOfEmployee.push_back(newRetailer);
 	}
 
 	int numOfTelephonist{ 0 };
@@ -31,7 +31,7 @@ void EmployeeModification::InputListOfEmployee()
 	for (int i = 0; i < numOfTelephonist; i++)
 	{
 		std::shared_ptr<Telephonist> newTelephonist(new Telephonist);
-		listOfEmployee.push_back(std::move(newTelephonist));
+		listOfEmployee.push_back(newTelephonist);
 	}
 
 	int numOfGuard{ 0 };
@@ -40,7 +40,7 @@ void EmployeeModification::InputListOfEmployee()
 	for (int i = 0; i < numOfGuard; i++)
 	{
 		std::shared_ptr<Guard> newGuard(new Guard);
-		listOfEmployee.push_back(std::move(newGuard));
+		listOfEmployee.push_back(newGuard);
 	}
 
 	for (unsigned int i = 0; i < listOfEmployee.size(); i++)
@@ -105,13 +105,31 @@ void EmployeeModification::Remove()
 			break;
 		}
 	}
-	//Fix
+	cout << "List after Removing: \n";
+	std::sort(listOfEmployee.begin(), listOfEmployee.end(), [](const std::shared_ptr<Employee>& a, const std::shared_ptr<Employee>& b) {
+
+		return a->FindSalary() > b->FindSalary(); 
+		});
 	for (unsigned int i = 0; i < listOfEmployee.size(); i++)
 	{
 		listOfEmployee[i]->OutputInformationOfEmployee();
 	}
+}
 
 
+
+void EmployeeModification::SortDescending()
+{
+	using std::cout;
+	cout << "List sorting: \n";
+	std::sort(listOfEmployee.begin(), listOfEmployee.end(), [](const std::shared_ptr<Employee>& a, const std::shared_ptr<Employee>& b) {
+
+		return a->FindSalary() > b->FindSalary();
+		});
+	for (unsigned int i = 0; i < listOfEmployee.size(); i++)
+	{
+		listOfEmployee[i]->OutputInformationOfEmployee();
+	}
 }
 
 

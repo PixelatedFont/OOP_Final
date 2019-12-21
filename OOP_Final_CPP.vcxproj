@@ -167,6 +167,7 @@
     <ClInclude Include="EmployeeModification.h" />
     <ClInclude Include="Guard.h" />
     <ClInclude Include="IEmployee.h" />
+    <ClInclude Include="IEmployeeModification.h" />
     <ClInclude Include="Retailer.h" />
     <ClInclude Include="Telephonist.h" />
   </ItemGroup>

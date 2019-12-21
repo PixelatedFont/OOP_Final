@@ -11,7 +11,8 @@ int main()
 	EmployeeModification Emp;
 	Emp.InputListOfEmployee();
 	Emp.ShowEmployeeWithMaxSalary();
-	Emp.Remove();
+	Emp.SortDescending();
+
 	return 0;
 }
 
