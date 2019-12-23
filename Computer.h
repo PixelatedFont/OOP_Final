@@ -6,7 +6,7 @@
 
 class Computer : public Product
 {
-protected:
+private:
 	std::string cpu;
 	
 public:

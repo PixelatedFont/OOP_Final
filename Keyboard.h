@@ -6,7 +6,7 @@
 
 class Keyboard : public Product
 {
-protected:
+private:
 	std::string color;
 	
 public:

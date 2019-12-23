@@ -7,7 +7,7 @@
 
 class Customer : public ICustomer
 {
-public:
+private:
 	std::string	customerName;
 	std::string phoneNumber;
 	std::string moneySpent;

@@ -7,8 +7,9 @@
 
 class Mouse : public Product
 {
-public:
+private:
 	std::string quality;
+
 public:
 	Mouse();
 	Mouse(std::string quality1, std::string nameOfProduct1, std::string serialNumber1, std::string type1, std::string price1);
