@@ -5,7 +5,6 @@
 #include "Telephonist.h"
 #include <vector>
 #include <algorithm>
-#include <functional>
 
 class EmployeeModification
 {
@@ -26,6 +25,7 @@ public:
 	void SortDescending();
 	void FindByName();
 	void DefineTheRank();
+
 
 
 };

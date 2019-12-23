@@ -8,8 +8,8 @@ private:
 public:
 	Guard();
 	Guard(double bonus1, std::string name1, std::string id1, double birthYear1, double numberOfWorkDay, double baseSalary1, double salary);
-	void InputInformationOfEmployee() override;
-	double FindSalary() override;
-	void OutputInformationOfEmployee() override;
+	void InputInformationOfEmployee();
+	double FindSalary();
+	void OutputInformationOfEmployee();
 };
 

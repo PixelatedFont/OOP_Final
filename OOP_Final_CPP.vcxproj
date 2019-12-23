@@ -84,8 +84,6 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
@@ -94,6 +92,9 @@
       <DisableLanguageExtensions>true</DisableLanguageExtensions>
       <TreatWarningAsError>true</TreatWarningAsError>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>
+      </AdditionalIncludeDirectories>
+      <PrecompiledHeader />
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -154,25 +155,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Computer.cpp" />
     <ClCompile Include="Customer.cpp" />
     <ClCompile Include="Employee.cpp" />
     <ClCompile Include="EmployeeModification.cpp" />
+    <ClCompile Include="GetListCustomer.cpp" />
+    <ClCompile Include="GetListProduct.cpp" />
     <ClCompile Include="Guard.cpp" />
     <ClCompile Include="IEmployee.cpp" />
+    <ClCompile Include="Keyboard.cpp" />
+    <ClCompile Include="Mouse.cpp" />
     <ClCompile Include="OOP_Final_CPP.cpp" />
     <ClCompile Include="Product.cpp" />
     <ClCompile Include="Retailer.cpp" />
     <ClCompile Include="Telephonist.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Computer.h" />
     <ClInclude Include="Customer.h" />
     <ClInclude Include="Employee.h" />
     <ClInclude Include="EmployeeModification.h" />
+    <ClInclude Include="GetListCustomer.h" />
+    <ClInclude Include="GetListProduct.h" />
     <ClInclude Include="Guard.h" />
     <ClInclude Include="ICustomer.h" />
     <ClInclude Include="IEmployee.h" />
     <ClInclude Include="IEmployeeModification.h" />
+    <ClInclude Include="IGetListCustomer.h" />
+    <ClInclude Include="IGetListProduct.h" />
     <ClInclude Include="IProduct.h" />
+    <ClInclude Include="Keyboard.h" />
+    <ClInclude Include="Mouse.h" />
     <ClInclude Include="Product.h" />
     <ClInclude Include="Retailer.h" />
     <ClInclude Include="Telephonist.h" />

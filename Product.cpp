@@ -22,3 +22,19 @@ void Product::OutputProductInformation()
 	cout << "Type: " << Product::type << "\n";
 	cout << "Price: " << Product::price << "\n";
 }
+
+void Product::InputProductInformation()
+{
+	using std::cout;
+	using std::cin;
+
+	cout << "Name of this Product: ";
+	cin >> Product::nameOfProduct;
+	cout << "Serial number: ";
+	cin >> Product::serialNumber;
+	cout << "Type: ";
+	cin >> Product::type;
+	cout << "Price: ";
+	cin >> Product::price;
+
+}
